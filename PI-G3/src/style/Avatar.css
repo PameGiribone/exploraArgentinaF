@@ -1,0 +1,13 @@
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Tamaño del avatar */
+    height: 50px; /* Tamaño del avatar */
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del texto */
+    border-radius: 50%; /* Hacerlo circular */
+    font-size: 20px; /* Tamaño del texto */
+    font-weight: bold;
+    text-transform: uppercase;
+}

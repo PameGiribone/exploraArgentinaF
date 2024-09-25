@@ -1,0 +1,880 @@
+/*PAGINA DETALLE*/
+/*PAGINA DETALLES */
+
+.container-detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: max-content;
+    padding: 20px;
+    max-width: 85vw;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.container-detail h4 {
+    margin-top: 20vh;
+    width: 80vw;
+    font-size: 2rem;
+    margin-right: 1vw;
+}
+
+div.copyright {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/*---------------------      SECCION  1    ----------------------*/
+
+/*----  DIV QUE CONTIENE TITULO E IMAGENES -----*/
+
+.detail-title {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.btn-share {
+    margin-top: 20vh;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: black;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-share:hover {
+    color: #0056b3;
+    transform: scale(1.1);
+
+}
+
+.section-one {
+    height: min-content;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 2vh;
+    margin-bottom: 1vh;
+
+}
+
+.img-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/*----  DIV QUE CONTIENE TEXTO Y CARD BOOKING -----*/
+
+.info-booking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 40vw;
+    text-align: center;
+}
+
+.info-booking span {
+
+    font-size: 1.2rem;
+}
+
+.info-booking p {
+    /* color: #8aa5ac; */
+    font-size: 1rem;
+}
+
+.prince-info-booking {
+    color: #007bc7;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.btn-text {
+    border: 1px solid black;
+    border-radius: 5px;
+    color: #007bc7;
+    background-color: #ffffff;
+    font-size: 0.5rem;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.btn-booking {
+    border: none;
+    border-radius: 10px;
+    background-color: #c18a29;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.btn-booking:hover {
+    background-color: #9c7a40;
+    cursor: pointer;
+}
+
+.card-booking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #0e2a33;
+    border-radius: 8px;
+    width: 30vw;
+    height: 37vh;
+    text-align: center;
+    margin-bottom: 2vh;
+    padding-top: 30px;
+    /* background-color: #c18a29; */
+    background-color: rgba(193, 138, 41, 0.2);
+
+}
+
+.card-booking h3 {
+    color: #0e2a33;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: -3vh;
+
+}
+
+.card-booking input {
+    border: none;
+    border-radius: 5px;
+}
+
+.info-card-booking {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* border: 1px solid #0e2a33; */
+    border: 1px solid #c18a29;
+    padding: 7px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.info-card-booking input {
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.people-selection {
+    margin-top: 15px;
+
+
+}
+
+.people-selection label {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.people-selection select {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+.description-card-booking {
+    font-weight: bold;
+
+}
+
+.description-card-booking-two {
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-total {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bc7;
+}
+
+.tax {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.btn-card-booking {
+    border: none;
+    border-radius: 10px;
+    background-color: #c18a29;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/*---------------------      SECCION  2    ----------------------*/
+.section-two {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 25vh;
+    padding-bottom: 10vh;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
+}
+
+.link-home {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.property {
+    border-top: 2px solid #b3b3b3;
+    text-align: left;
+    top: -1px;
+    width: 100%;
+
+}
+
+.property-list li {
+    font-size: 12px;
+    font-weight: 900;
+    list-style-type: none;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.intinerary h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #c18a29;
+    padding-bottom: 10px;
+
+}
+
+.intinerary {
+    padding: 0;
+    width: 250px;
+}
+
+.intinerary-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: -30vh;
+    text-align: center;
+}
+
+.intinerary-list p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+}
+
+.list-item svg {
+    margin-right: 12px;
+    /* Espacio entre el ícono y el texto */
+}
+
+
+.map-container {
+    height: 280px;
+    /* Ajusta la altura según tus necesidades */
+    width: 120vw;
+    /* Ocupa todo el ancho del contenedor padre */
+    margin: 0 auto;
+    /* Centra el contenedor horizontalmente */
+    padding: 0;
+    /* Elimina cualquier padding adicional */
+    box-sizing: border-box;
+}
+
+.leaflet-control-attribution {
+    display: none;
+}
+
+.btn-detail .btn-back {
+    /*Se agrego mayor especificidad para lograr ancho en el botón atrás*/
+    width: 700%;
+}
+
+.btn-back {
+    width: 10vw;
+    height: 5vh;
+    background-color: #ffffff;
+    border-radius: 90px;
+    border: 1px solid #007bc7;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.btn-back:hover {
+    background-color: #007bc7;
+    color: #ffffff;
+}
+
+.img-detalle {
+    display: none;
+}
+
+/* --DISPOSITIVOS MUY PEQUEÑOS */
+
+@media (min-width: 320px) and (max-width: 374px) {
+
+    /* --DETAIL */
+    .container-detail h4{
+        font-size: 1.5rem;
+    }
+    .carrusel{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .info-booking{
+        width: 100%;
+    }
+    .card-booking{
+        width: 90%;
+        height: max-content;
+    }
+    .itinerary h3 {
+        text-align: center;
+    }
+    .itinerary-list{
+        margin-left: -5vh;
+    }
+    .section-two{
+        margin-top: 8vw;
+        padding: 0;
+    }
+    .map-container{
+        max-width: 95vw;
+    }
+
+    .property-list{
+        padding: 10px;
+    }
+
+    .btn-detail .btn-back {
+        width: 70px;
+        margin: 0px;
+        padding: 0px;
+    }
+    /* --FOOTER */
+    .container-footer{
+        width: 100vw;
+    }
+   .footer-columns{
+        display: grid;
+        flex-direction: wrap;
+   }
+   .logo-footer{
+        display: none;
+   }
+   .copyright {
+        display: none;
+   }
+    div.copyright{
+        display: none;
+  } 
+}
+
+/* --DISPOSITIVOS PEQUEÑOS */
+
+@media (min-width: 375px) and (max-width: 424px) {
+
+    /* --DETAIL */
+    
+    .container-detail h4{
+        font-size: 1.5rem;
+    }
+    .carrusel{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .info-booking{
+        width: 100%;
+    }
+    .card-booking{
+        width: 90%;
+        height: max-content;
+    }
+    .itinerary h3 {
+        text-align: center;
+    }
+    .section-two{
+        margin-top: 8vw;
+        padding: 0px;
+    }   
+    .itinerary-list{
+        margin-left: -5vh;
+        width: 65vw;        
+    }
+    .itinerary-list p {
+        text-align: justify;
+        width: 95%;
+    }
+    .map-container{
+        max-width: 95vw;
+    }
+    .btn-back{
+        margin-left: 50vw;
+        margin: 0;
+        padding: 0;        
+    }
+
+    .property-list{
+        padding: 10px;
+    }
+
+    /* --FOOTER */
+    .container-footer{
+        width: 100%;
+    }
+    .footer-columns{
+          display: grid;
+          flex-direction: wrap;
+    }
+    .logo-footer{
+          display: none;
+    }
+    .copyright {
+          display: none;
+    }
+
+    .btn-detail .btn-back {
+        width: 80px;
+    }
+
+      div.copyright{
+          display: none;
+    }
+}
+
+/* --DISPOSITIVOS MEDIANOS */
+
+@media (min-width: 425px) and (max-width: 768px) {
+
+    /* --DETAIL */
+    .container-detail h4{
+        font-size: 1.5rem;
+        
+    }
+    .section-one{
+        width: 93%;
+        margin-left: -4vw;
+    }
+    .carrusel{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .info-booking{
+        width: 95%;
+    }
+    .card-booking{
+        width: 90%;
+        height: max-content;
+    }
+    .itinerary h3 {
+        text-align: center;
+    }
+    .section-two{
+        margin-top: 8vw;
+    }
+    .itinerary-list{
+        margin-left: -5vh;
+        width: 65vw;        
+    }
+    .itinerary-list p {
+        text-align: justify;
+        width: 95%;
+    }
+    .property-list{
+        margin-left: -5vh;
+    }
+    .map-container{
+        max-width: 80vw;
+    }
+    .btn-back{
+        margin-left: 50vw;
+        margin: 0;
+        padding: 0;        
+    }
+
+    .btn-detail .btn-back {
+        width: 80px;
+    }
+
+    /* --FOOTER */
+    .container-footer{
+        width: 100vw;
+        margin-top: 25vh;
+    }
+    .footer-columns{
+          display: grid;
+          flex-direction: wrap;
+    }
+    .logo-footer{
+          display: none;
+    }
+    .copyright {
+        display: none;
+    }
+    div.copyright{
+        display: none;
+    }
+}
+
+/* --DISPOSITIVOS GRANDES */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /* --DETAIL */
+    .container-detail{
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+ 
+    .container-detail h4{
+        font-size: 1.5rem;
+        margin-left: 1vw;
+        
+    }
+    .section-one{
+        width: 93%;
+        margin-left: -8vw;
+    }
+    .carrusel{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .info-booking{
+        width: 80%;
+    }
+   
+    .card-booking{
+        width: 60%;
+        height: max-content;
+    }
+    .itinerary h3 {
+        text-align: center;
+    }
+    .section-two{
+        margin-top: 8vw;
+    }
+    .itinerary-list p {
+        text-align: justify;
+        width: 80%;
+    }   
+    .map-container{
+        width: 60vw;
+    }
+    .btn-back{
+        margin-left: 50vw;
+        margin: 0;
+        padding: 0;        
+    }
+
+    .btn-detail .btn-back {
+        width: 80px;
+    }
+    /* --FOOTER */
+    .container-footer{
+        width: 100vw;
+        margin-top: 25vh;
+    }
+
+    .footer-columns{
+        display: grid;
+        flex-direction: wrap;
+  }
+  .logo-footer{
+        display: none;
+  }
+  .copyright {
+      display: none;
+  }
+  div.copyright{
+      display: none;
+  }
+
+}
+
+/*-------------------------     MEDIAS QUERYS      --------------------*/
+@media screen and (min-width: 1025px) {
+
+    .carousel-image {
+        display: none;
+    }
+
+    .container-detail {
+        padding-bottom: 0;
+    }
+
+    .img-detalle {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 10px;
+        width: 100%;
+        height: auto;
+    }
+    
+    .img-detalle {
+        display: grid;
+        grid-template-columns: 2fr 1fr; 
+        gap: 10px;
+        width: 100%;
+        max-height: 620px;
+    }
+    
+    .img-principal {
+        grid-column: 1 / 2;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px 0px 0px 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        height: 550px;
+    }
+    
+    .img-secundarias {
+        grid-column: 2 / 3;
+        display: flex;
+        flex-direction: column; 
+        gap: 10px;
+        height: 550px;
+    }
+    
+    .img-secundaria {
+        width: 100%;
+        object-fit: cover;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        flex: 1; 
+        min-height: 0;
+    }
+    
+    .secundaria1 {
+        border-radius: 0px 10px 0px 0px; 
+    }
+    
+    .secundaria2 {
+        border-radius: 0px 0px 10px 0px;
+    }
+    
+    
+    
+    .img-principal:hover,
+    .img-secundaria:hover {
+        transform: scale(1.02);
+    }
+    
+    
+
+    .container-detail h4 {
+        font-size: 2rem;
+        margin-left: 0;
+    }
+
+    .section-one {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 2vh;
+        padding-left: 15px;
+        padding-right: 15px;
+        flex-wrap: wrap;
+        align-content: stretch;
+    }
+
+    .info-booking {
+        order: 3;
+        width: 40vw;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .card-booking {
+        margin-top: 60px;
+        padding: 60px 5px 70px 5px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        border-radius: 8px; 
+
+    }
+
+
+    .card-booking h3 {
+        font-size: 25px;
+    }
+
+    .btn-booking {
+        margin-bottom: 10px;
+    }
+
+    .info-booking h3 {
+        text-align: left;
+        font-size: 25px;
+    }
+
+    .descripcion-larga {
+        display: block;
+        text-align: justify;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Sección dos */
+    .section-two {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 0 2rem;
+        padding-bottom: 10vh;
+        margin: 11vh;
+    }
+
+    .travel {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .travel h3 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .itinerary {
+        padding: 0;
+        width: 300px;
+    }
+
+    .itinerary-list li {
+        font-size: 1.1rem;
+        font-weight: 300;
+        list-style-type: decimal;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .map-container {
+        margin-top: 25px;
+    }
+
+    .map-container img {
+        height: 60vh;
+        width: 50vw;
+    }
+
+    .btn-detail {
+        padding-bottom: 10vh;
+    }
+
+    .visibility-popover {
+        display: none;
+    }
+
+    .property-list li {
+        font-size: 1.0rem;
+    }
+
+    .container-card-tour {
+        margin-left: 15vw;
+        margin-top: 1vh;
+    }
+
+    .img-card-tour {
+        width: 300px;
+        height: 300px;
+    }
+
+    .price-card-tour {
+        width: 90%;
+        margin-left: 5px;
+    }
+
+    .price {
+        font-size: 1.2rem;
+    }
+
+    .container-footer {
+        width: 105%;
+    }
+
+    .footer-columns {
+        width: 100%;
+    }
+
+    .logo-footer {
+        margin-top: 8vh;
+        height: 10vh;
+        width: 5vw;
+    }
+
+    .btn-detail .btn-back {
+        width: 150px;
+    }
+
+    .property{
+        border-top: none;
+    }
+
+    @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      /* Estilo inicial para los elementos animados */
+      .animate {
+        opacity: 0; /* Inicialmente oculto */
+        transform: translateY(20px); /* Inicialmente desplazado */
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+      
+      /* Clase que se aplicará cuando el elemento está visible */
+      .animate.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+}

@@ -1,0 +1,132 @@
+/* Estilos para el Overlay del Drawer */
+.drawer-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Color de fondo semitransparente */
+    z-index: 999; /* Asegura que el overlay esté encima del contenido */
+}
+
+/* Estilos para el Contenido del Drawer */
+.drawer-content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw; /* Ajusta el ancho del Drawer según tus necesidades */
+    max-width: 100vw; /* Ancho máximo para pantallas grandes */
+    height: 100vh; /* Ajusta la altura para que ocupe el 100% del viewport */
+    background: white; /* Color de fondo del Drawer */
+    box-shadow: -2px 0 6px rgba(0, 0, 0, 0.2); /* Sombra para darle un efecto de profundidad */
+    z-index: 1000; /* Asegura que el contenido del Drawer esté encima del overlay */
+    transform: translateX(100%); /* Oculta el Drawer fuera del viewport por defecto */
+    transition: transform 0.3s ease; /* Animación para abrir/cerrar el Drawer */
+    overflow: hidden; /* Oculta el contenido que se desborda (no es necesario con el scrollable-container) */
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .drawer-content {
+        width: 100vw; /* Ocupa el ancho completo en pantallas pequeñas */
+        max-width: none; /* Quita el ancho máximo para pantallas pequeñas */
+    }
+    .drawer-trigger{
+        width: 75vw;
+    }
+    .scrollable-container {
+        max-height: 70vh; /* Reduce el alto máximo para pantallas pequeñas */
+        overflow-y: scroll; /* Asegura que el contenedor permita el scroll */
+    }
+    .policie {
+        flex: 1 1 100%; /* Cada div ocupará el 100% del ancho en pantallas pequeñas */
+    }
+}
+.scroll-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra las líneas horizontalmente */
+    margin: 10px 0; /* Ajusta el margen superior e inferior según sea necesario */
+    pointer-events: none; /* Evita que el área táctil capture los eventos de scroll */
+}
+
+.scroll-indicator .line {
+    width: 40px; /* Ancho de las líneas */
+    height: 1px; /* Altura de las líneas */
+    background-color: #b4b4b4; /* Color de las líneas */
+    margin: 3px ; /* Ajusta el margen superior e inferior de las líneas */
+}
+/* * Contenedor dentro del Drawer para contenido scrollable */ */
+.scrollable-container {
+    flex: 1; /* Permite que el contenedor ocupe todo el espacio disponible dentro del Drawer */
+    overflow-y: auto; /* Permite el desplazamiento vertical */
+    height: 100%; /* Asegura que ocupe toda la altura disponible */
+    max-height: 80vh; /* Ajusta el máximo de altura para asegurarse de que el contenido no se desborde */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    padding: 20px; /* Añade padding dentro del contenedor */
+}
+
+/* Contenedor para las políticas */
+.policies-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en filas */
+    justify-content: space-between; /* Distribuye los elementos uniformemente */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 20px;
+}
+
+.policie {
+    flex: 1 1 calc(50% - 20px); /* Ocupa el 50% del ancho menos el espacio del gap */
+    margin-bottom: 20px; /* Espacio entre las filas de políticas */
+}
+
+/* Estilos para los títulos de las políticas */
+.policie h3 {
+    font-weight: bold;
+}
+
+/* Estilos para los párrafos dentro de cada política */
+.policie p {
+    font-size: 14px;
+}
+
+/* Estilos cuando el Drawer está abierto */
+[data-state='open'] .drawer-content {
+    transform: translateX(0); /* Mueve el Drawer a la vista */
+}
+
+/* Estilos para el Trigger del Drawer */
+.drawer-trigger {
+    cursor: pointer; /* Muestra el cursor como puntero */
+    margin-top: 3rem; /* Añade espacio entre el trigger y el contenido */
+    height: 3rem;
+    background-color: #f5f5f5;
+    border: none;
+    color: #007bc7;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0px 20px 0px 20px;
+    border-radius: 10px 10px 0px 0px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.drawer-trigger:hover {
+    background-color: #172432;
+    color: #ffffff;
+}
+
+/* Estilos para el Botón de Cierre */
+.drawer-close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    z-index: 1010; /* Asegura que el botón esté encima del contenido */
+}

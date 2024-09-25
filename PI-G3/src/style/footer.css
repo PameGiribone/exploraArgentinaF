@@ -1,0 +1,235 @@
+footer {
+    padding: 0px 0;
+    clear: both;
+    flex: 1;
+  }
+  
+  .container-footer-box {
+    max-width: 1220px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .container-footer-box {
+    max-width: 1220px;
+    margin-bottom: 250px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .foot-box {
+    width: 23%;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+  }
+  
+  .foot-box p:nth-child(1) {
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #0e2a33;
+  }
+  
+  .foot-box p:nth-child(2) {
+    font-size: 15px;
+    color: grey;
+    letter-spacing: 1px;
+  }
+
+  .foot-box p:nth-child(3) {
+    font-size: 15px;
+    color: grey;
+    letter-spacing: 1px;
+  }
+
+  .logo-footer{
+    width: 4vw;
+    height: 7.2vh;
+    margin-top: -15vh;
+  }
+  
+  .foot-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .foot-box ul li {
+    padding: 10px 0;
+  }
+  
+  .foot-box li a {
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .foot-box li  {
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .iconos {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .foot-box li a {
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .foot-box li a:hover {
+    color: #007bc7;
+  }
+  
+  .footer-button {
+    height: 42px;
+    padding: 10px 22px;
+    font-size: 15px;
+    background: #007bc7;
+    border: 0px solid #0e2a33;
+    color: white;
+    width: 150px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .footer-button:hover {
+    background-color: #005a99;
+    transform: scale(1.05); 
+  }
+
+  .footer-search {
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out; 
+  }
+
+  .footer-search:hover {
+    color: #007bc7;
+  }
+  
+  .new_footer_area {
+    position: relative;
+    background-color: #fbfbfd;
+  }
+
+  .footer-logo{
+    width: 40px;
+  }
+
+  .container-footer-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 10px;
+}
+  
+  .footer_bg {
+    position: absolute;
+    bottom: 0;
+    background: url('/public/img/footer-bg.png') no-repeat center center;
+    width: 100%;
+    height: 266px;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  .footer_bg_two {
+    background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyLGwEUVwPK6Vi8xXMymsc-ZXVwLWyXhogZxbcXQYSY55REw_0D4VTQnsVzCrL7nsyjd0P7RVOI5NKJbQ75koZIalD8mqbMquP20fL3DxsWngKkOLOzoOf9sMuxlbyfkIBTsDw5WFUj-YJiI50yzgVjF8cZPHhEjkOP_PRTQXDHEq8AyWpBiJdN9SfQA/s16000/cyclist.gif') no-repeat center center;
+    width: 88px;
+    height: 100px;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    animation: ciclista 8s linear infinite;
+  }
+  
+  
+  @keyframes ciclista {
+    0% {
+      left: -25%;
+    }
+    100% {
+      left:100%;
+  }
+  }
+
+  /* Estilos para pantallas pequeñas (celulares) */
+@media only screen and (max-width: 768px) {
+
+  
+  .foot-box {
+    width: 50%; /* Tomar el 100% del ancho */
+    margin-bottom: 20px; /* Añadir margen entre las secciones */
+    text-align: center; /* Centrar el texto */
+  }
+
+  .container-footer-logo {
+    justify-content: center;
+}
+
+  .container-footer-box{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .foot-box ul {
+    padding-left: 0;
+  }
+
+  .foot-box p:nth-child(1) {
+    font-size: 16px;
+  }
+
+  .foot-box p:nth-child(2),
+  .foot-box p:nth-child(3) {
+    font-size: 14px; 
+  }
+
+  .logo-footer {
+    width: 80px;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .iconos {
+    justify-content: center;
+    gap: 15px; 
+  }
+}
+
+/* Estilos para pantallas extra pequeñas (muy pequeños dispositivos móviles) */
+@media only screen and (max-width: 375px) {
+
+  .footer_bg {
+    height: 100px; /* Reducir la altura de fondo en móviles */
+  }
+
+  .foot-box {
+    width: 100%;
+  }
+
+  .footer_bg_two {
+    width: 72px;
+    height: 80px;
+  }
+
+  .foot-box li a {
+    font-size: 12px; /* Reducir el tamaño del texto en los enlaces */
+  }
+
+}

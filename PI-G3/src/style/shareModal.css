@@ -1,0 +1,113 @@
+
+/* Imagen del producto */
+.ReactModal__Content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  /* Texto del producto */
+  .ReactModal__Content p {
+    font-size: 1em;
+    margin: 15px 0;
+  }
+  
+  /* Área de texto para mensaje personalizado */
+  .ReactModal__Content textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Contenedor de los botones de compartir */
+  .share-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px; /* Espaciado entre los botones */
+    margin-top: 20px;
+  }
+  
+
+
+  .ReactModal__Content .share-button-modal-tt,
+  .ReactModal__Content .share-button-modal-tw,
+  .ReactModal__Content .share-button-modal-fb,
+  .ReactModal__Content .share-button-modal-ln,
+  .ReactModal__Content .share-button-modal-ig {
+      color: #fff;
+      background-color: grey;
+  }
+
+      
+      .ReactModal__Content .share-button-modal-ig:hover {
+        background-color: #C13584;
+      }
+
+      
+      .ReactModal__Content .share-button-modal-tw:hover {
+        background-color: #1DA1F2;
+      }
+  
+      
+      .ReactModal__Content .share-button-modal-ln:hover {
+        background-color: #0077B5;
+      }
+  
+
+      .ReactModal__Content .share-button-modal-tt:hover {
+        background-color: #000000;
+      }
+
+      
+      .ReactModal__Content .share-button-modal-fb:hover {
+        background-color: #1877F2;
+      }
+  
+      @media (min-width: 320px) and (max-width: 374px) {
+        .share-buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 2px; /* Espaciado entre los botones */
+            margin-top: 20px;
+          }
+
+          .ReactModal__Content .share-button-modal-tt,
+          .ReactModal__Content .share-button-modal-tw,
+          .ReactModal__Content .share-button-modal-fb,
+          .ReactModal__Content .share-button-modal-ln,
+          .ReactModal__Content .share-button-modal-ig {
+              max-width: 45px;
+              max-height: 38px;
+              align-items: center;
+          }
+
+
+      }
+
+      @media (min-width: 375px) and (max-width: 424px) {
+
+        .share-buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 4px; /* Espaciado entre los botones */
+            margin-top: 20px;
+          }
+
+          .ReactModal__Content .share-button-modal-tt,
+          .ReactModal__Content .share-button-modal-tw,
+          .ReactModal__Content .share-button-modal-fb,
+          .ReactModal__Content .share-button-modal-ln,
+          .ReactModal__Content .share-button-modal-ig {
+              max-width: 52px;
+              max-height: 38px;
+              align-items: center;
+          }
+      }

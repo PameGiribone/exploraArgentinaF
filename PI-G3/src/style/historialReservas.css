@@ -1,0 +1,80 @@
+.historial-reservas-container {
+    padding: 20px;
+    padding-top: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.historial-reservas-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.historial-reservas-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.historial-reservas-table th,
+.historial-reservas-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.historial-reservas-table th {
+    background-color: #39AFE51A;
+    color: #555;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+}
+
+.historial-reservas-table td {
+    font-size: 0.875rem;
+    color: #333;
+}
+
+.historial-reservas-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.historial-reservas-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.historial-reservas-table .product-image {
+    width: 80%;
+    height: 10vh;
+    
+}
+
+.historial-reservas-table .product-precio{
+    padding-left: 50px;
+}
+
+.btn-back-container{
+    padding-top: auto;
+}
+
+.btn-back-historial {
+    width: 10vw;
+    height: 5vh;
+    background-color: #ffffff;
+    border-radius: 90px;
+    border: 1px solid #007bc7;
+    cursor: pointer;
+    margin-top: 10vh;
+    margin-left: 70vw;
+    
+}
+
+.btn-back-historial:hover {
+    background-color: #007bc7;
+    color: #ffffff;
+}

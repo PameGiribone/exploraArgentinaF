@@ -1,0 +1,102 @@
+.card-booking-reservation-confirm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #0e2a33;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 2px 2px 2px 2px rgb(126, 121, 121);
+  width: 25vw;
+  height: 80vh;
+  text-align: center;
+  margin-top: 5vh;
+  background-color: #f5f5f5;
+}
+
+.logo-reservation-confirm {
+  width: 25%;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.info-card-booking-confirm {
+  text-align: left;
+  border-bottom: 1px solid #b3b3b3;
+  width: 100%;
+}
+
+.info-card-booking-confirm p{
+    font-weight: bold;
+}
+.info-card-booking-confirm span{
+    font-weight:lighter
+}
+
+.container-btn-r-confirm{
+  padding-top: 65vh;
+}
+
+.btn-reserv-confirm {
+  background-color: #007bc7;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  border: 1px solid #0e2a33;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  font-weight:bolder;
+  margin: 10px;
+  margin-top: 30px;
+}
+
+.btn-reserv-confirm:hover{
+  background-color: #0e2a33;
+}
+
+@media (min-width: 320px) and (max-width: 426px) {
+  .container-reservation{
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 25vh;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .card-booking-reservation-confirm{
+    width: 80vw;
+    height: 120vh;
+    padding: 10px;
+    margin: 0;
+    
+  }
+  .container-btn-r-confirm{
+    padding: 0;
+    margin: 0;
+  }
+
+  .btn-reserv-confirm{
+    margin: 0;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width:1024px) {
+  .card-booking-reservation-confirm{
+    height: 110vh;
+    width: 30vw;
+    margin-top: 35vh;
+  }
+.container-reservation{
+  padding-bottom: 25vh;
+}
+
+
+
+}
