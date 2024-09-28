@@ -12,7 +12,7 @@ const Reservation = () => {
     const [reserved,setReserved] = useState([])
     const [error, setError] = useState(null);
     const params = useParams()
-    const urlTourReserved = `http://localhost:8081/api/productos/${params.id}`;
+    const urlTourReserved = `https://accurate-spontaneity-production.up.railway.app:8081/api/productos/${params.id}`;
     const navigate = useNavigate();
   
     
@@ -60,7 +60,7 @@ const Reservation = () => {
       const usuarioId = state.userId; 
 
       try {
-         const response = await  axios.post('http://localhost:8081/reservar/registrar', {
+         const response = await  axios.post('https://accurate-spontaneity-production.up.railway.app:8081/reservar/registrar', {
           usuarioId,
           productoId:tourId,
           fechaReserva:dateReservation // Enviar como YYYY-MM-DD

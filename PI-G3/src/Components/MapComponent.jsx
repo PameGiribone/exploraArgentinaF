@@ -19,7 +19,7 @@ const MapComponent = ({ ubicacion }) => {
   //const [tour, setTour] = useState(null); 
   //const params = useParams();
   const [position, setPosition] = useState([0, 0]);
-  //const url = `http://localhost:8081/api/productos/${params.id}`;
+  //const url = `https://accurate-spontaneity-production.up.railway.app:8081/api/productos/${params.id}`;
 
  /*  useEffect(() => {
     axios.get(url)

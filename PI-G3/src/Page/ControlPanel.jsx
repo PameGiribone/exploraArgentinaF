@@ -22,7 +22,7 @@ const ControlPanel = () => {
 
   // Cargar la lista de usuarios
   useEffect(() => {
-    axios.get('http://localhost:8081/usuarios/listar')
+    axios.get('https://accurate-spontaneity-production.up.railway.app:8081/usuarios/listar')
       .then(response => {
         setUsuarios(response.data);
       })
@@ -33,7 +33,7 @@ const ControlPanel = () => {
 
   // Manejar el cambio de rol de administrador
   const handleRoleToggle = (id, esAdministrador) => {
-    axios.put(`http://localhost:8081/usuarios/cambiar-rol/${id}`, null, {
+    axios.put(`https://accurate-spontaneity-production.up.railway.app:8081/usuarios/cambiar-rol/${id}`, null, {
       params: { esAdministrador }
     })
     .then(response => {

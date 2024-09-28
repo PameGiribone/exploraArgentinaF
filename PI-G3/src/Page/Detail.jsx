@@ -25,8 +25,8 @@ const Detail = () => {
   const totalPrice = peopleCount * parseFloat(tour.precio);
   const navigate = useNavigate();
   const params = useParams();
-  const url = `http://localhost:8081/api/productos/${params.id}`;
-  const reservedDatesUrl = `http://localhost:8081/reservar/producto/${params.id}`; // URL para obtener las fechas reservadas
+  const url = `https://accurate-spontaneity-production.up.railway.app:8081/api/productos/${params.id}`;
+  const reservedDatesUrl = `https://accurate-spontaneity-production.up.railway.app:8081/reservar/producto/${params.id}`; // URL para obtener las fechas reservadas
   const [isShareModalOpen, setShareModalOpen] = useState(false);
   const { ref: sectionTwoRef, inView: sectionTwoInView } = useInView({
     triggerOnce: true, // La animación se activa solo una vez en true 

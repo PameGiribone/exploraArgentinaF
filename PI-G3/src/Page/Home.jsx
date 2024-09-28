@@ -32,7 +32,7 @@ const Home = () => {
       const userId = localStorage.getItem("userId");
       if (userId) {
         axios
-          .get(`http://localhost:8081/favoritos/listarFavoritos/${userId}`)
+          .get(`https://accurate-spontaneity-production.up.railway.app:8081/favoritos/listarFavoritos/${userId}`)
           .then((response) => {
             const favoriteIds = response.data.map((fav) => fav.productoId);
             setFavorites(favoriteIds);
@@ -51,7 +51,7 @@ const Home = () => {
     if (selectedDate) {
       axios
         .get(
-          `http://localhost:8081/reservar/productosPorFecha/${
+          `https://accurate-spontaneity-production.up.railway.app:8081/reservar/productosPorFecha/${
             selectedDate.toISOString().split("T")[0]
           }`
         )
@@ -138,14 +138,14 @@ const Home = () => {
 
     try {
       if (isFavorite) {
-        await axios.delete('http://localhost:8081/favoritos/eliminarFavorito', {
+        await axios.delete('https://accurate-spontaneity-production.up.railway.app:8081/favoritos/eliminarFavorito', {
           data: { usuarioId: userId, productoId: tourId },
         });
         const updatedFavorites = favorites.filter((id) => id !== tourId);
         setFavorites(updatedFavorites);
         localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
       } else {
-        await axios.post('http://localhost:8081/favoritos/agregarFavorito', {
+        await axios.post('https://accurate-spontaneity-production.up.railway.app:8081/favoritos/agregarFavorito', {
           usuarioId: userId,
           productoId: tourId,
         });

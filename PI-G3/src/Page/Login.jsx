@@ -41,7 +41,7 @@ const Login = () => {
             localStorage.setItem("userId", user.id);
 
             // Obtener y guardar solo los IDs de los favoritos del usuario
-            const { data: favoritos } = await axios.get(`http://localhost:8081/favoritos/listarFavoritos/${user.id}`);
+            const { data: favoritos } = await axios.get(`https://accurate-spontaneity-production.up.railway.app:8081/favoritos/listarFavoritos/${user.id}`);
             const favoriteIds = favoritos.map(fav => fav.productoId);
             localStorage.setItem("favorites", JSON.stringify(favoriteIds));
             navigate('/');
