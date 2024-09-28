@@ -22,7 +22,7 @@ const HistorialReservas = () => {
     const userId = localStorage.getItem("userId");
     console.log("User ID:", userId); // Verificar el userId
     if (userId) {
-      axios.get(`https://accurate-spontaneity-production.up.railway.app:8081/reservar/usuario/historial/${userId}`)
+      axios.get(`https://accurate-spontaneity-production.up.railway.app/reservar/usuario/historial/${userId}`)
       .then(res => setReservas(res.data))
       .catch(err => console.log(err));
     }

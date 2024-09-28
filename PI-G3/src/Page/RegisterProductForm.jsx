@@ -109,7 +109,7 @@ const RegisterProductForm = () => {
 
         setError(null);
 
-        axios.post('https://accurate-spontaneity-production.up.railway.app:8081/api/productos/agregarProducto', productData)
+        axios.post('https://accurate-spontaneity-production.up.railway.app/api/productos/agregarProducto', productData)
             .then((res) => {
                 dispatch({ type: "ADD_PRODUCTO", payload: res.data });
                 alert("Producto registrado exitosamente!");

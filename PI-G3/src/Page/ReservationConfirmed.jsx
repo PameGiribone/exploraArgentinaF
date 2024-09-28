@@ -10,7 +10,7 @@ export const ReservationConfirmed = () => {
   const [reservationConfirm,setReservationConfirm] = useState(null);
   const params = useParams();
   const navigate = useNavigate();
-  const urlReservation = `https://accurate-spontaneity-production.up.railway.app:8081/reservar/${params.id}`;
+  const urlReservation = `https://accurate-spontaneity-production.up.railway.app/reservar/${params.id}`;
   console.log(urlReservation);
   console.log(reservationConfirm);
   

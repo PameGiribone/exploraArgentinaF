@@ -22,7 +22,7 @@ const ProductAdmin = () => {
 
   useEffect(() => {
     // Obtener productos
-    axios.get('https://accurate-spontaneity-production.up.railway.app:8081/api/productos/aleatorios')
+    axios.get('https://accurate-spontaneity-production.up.railway.app/api/productos/aleatorios')
       .then(response => {
         const sortedProductos = response.data.sort((a, b) => a.id - b.id);
         setProductos(sortedProductos);
@@ -33,7 +33,7 @@ const ProductAdmin = () => {
       });
 
     // Obtener categorías
-    axios.get('https://accurate-spontaneity-production.up.railway.app:8081/api/productos/categorias/aleatorias')
+    axios.get('https://accurate-spontaneity-production.up.railway.app/api/productos/categorias/aleatorias')
       .then(response => {
         setCategorias(response.data);
       })
@@ -57,7 +57,7 @@ const ProductAdmin = () => {
   const handleDelete = (id) => {
     const confirmDelete = window.confirm("¿Estás seguro de que quieres eliminar este producto?");
     if (confirmDelete) {
-      axios.delete(`https://accurate-spontaneity-production.up.railway.app:8081/api/productos/eliminar/${id}`)
+      axios.delete(`https://accurate-spontaneity-production.up.railway.app/api/productos/eliminar/${id}`)
         .then(() => {
           // Actualizar el estado local
           setProductos(prevState => {
@@ -76,7 +76,7 @@ const ProductAdmin = () => {
   };
 
   const handleCategoryChange = (productoId, categoriaId) => {
-    axios.put('https://accurate-spontaneity-production.up.railway.app:8081/api/productos/asignarCategoria', {
+    axios.put('https://accurate-spontaneity-production.up.railway.app/api/productos/asignarCategoria', {
       productoId,
       categoriaId
     })

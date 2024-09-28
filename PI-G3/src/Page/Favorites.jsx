@@ -25,7 +25,7 @@ const Favorites = () => {
             if (favoriteIds.length > 0) {
                 try {
                     const responses = await Promise.all(
-                        favoriteIds.map(id => axios.get(`https://accurate-spontaneity-production.up.railway.app:8081/api/productos/${id}`))
+                        favoriteIds.map(id => axios.get(`https://accurate-spontaneity-production.up.railway.app/api/productos/${id}`))
                     );
                     setFavorites(responses.map(res => res.data));
                 } catch (error) {
@@ -41,7 +41,7 @@ const Favorites = () => {
         const userId = localStorage.getItem("userId");
 
         try {
-            await axios.delete('https://accurate-spontaneity-production.up.railway.app:8081/favoritos/eliminarFavorito', {
+            await axios.delete('https://accurate-spontaneity-production.up.railway.app/favoritos/eliminarFavorito', {
                 data: { usuarioId: userId, productoId: productoId }
             });
 

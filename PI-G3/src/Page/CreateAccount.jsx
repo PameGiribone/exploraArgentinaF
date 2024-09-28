@@ -62,7 +62,7 @@ const CreateAccount = () => {
     setError(alert("Usuario registrado exitosamente!"));
 
     try {
-      await axios.post('https://accurate-spontaneity-production.up.railway.app:8081/usuarios/registrar', {
+      await axios.post('https://accurate-spontaneity-production.up.railway.app/usuarios/registrar', {
         nombre,
         apellido,
         email,

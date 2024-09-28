@@ -23,8 +23,8 @@ const initialState = {
 
 const GlobalContext = ({ children }) => {
     const [state, dispatch] = useReducer(reducer, initialState);
-    const tourUrl = 'https://accurate-spontaneity-production.up.railway.app:8081/api/productos/aleatorios'
-    const urlCategories = 'https://accurate-spontaneity-production.up.railway.app:8081/api/productos/categorias/aleatorias'
+    const tourUrl = 'https://accurate-spontaneity-production.up.railway.app/api/productos/aleatorios'
+    const urlCategories = 'https://accurate-spontaneity-production.up.railway.app/api/productos/categorias/aleatorias'
     
     useEffect(() => {
       axios.get(tourUrl)
@@ -39,7 +39,7 @@ const GlobalContext = ({ children }) => {
 
 
     const loginUser = (email, password) => {
-        return axios.post('https://accurate-spontaneity-production.up.railway.app:8081/usuarios/login', { email, password: password })
+        return axios.post('https://accurate-spontaneity-production.up.railway.app/usuarios/login', { email, password: password })
             .then((res) => {
                 dispatch({ type: "SET_USER", payload: res.data });
                 return res.data;

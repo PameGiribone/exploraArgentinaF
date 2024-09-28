@@ -132,6 +132,7 @@ margin-left: -30vw;
     }
     .card-tour{
         width: 45vw;
+        margin-left: 1vw;
     }
     .info-card-tour{
         display: flex;
