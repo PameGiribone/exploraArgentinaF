@@ -41,8 +41,7 @@ export const ReservationConfirmed = () => {
  
  return (
     <div className="container-reservation">
-        <div className="card-booking-reservation-confirm">
-          <img className='logo-reservation-confirm' src="/img/logo.png" alt="logo" />
+        <div className="card-booking-reservation-confirm">         
           <h3>YA TENES RESERVADO TU TOUR !!!</h3>
           <p>Estas listo/a ?</p>
           <div className="info-card-booking-confirm">
